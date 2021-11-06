@@ -1,0 +1,33 @@
+{
+    "name": "ashiful/installer",
+    "description": "Laravel web installer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ashiful Islam",
+            "email": "ashiful134@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ashiful\\Installer\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ashiful\\Installer\\Providers\\LaravelInstallerServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
